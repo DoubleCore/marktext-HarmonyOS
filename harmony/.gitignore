@@ -1,0 +1,10 @@
+.hvigor/
+.idea/
+entry/build/
+entry/src/main/resources/rawfile/editor/
+oh_modules/
+entry/oh_modules/
+*.hap
+*.app
+marktext_*.jpeg
+marktext_*.json

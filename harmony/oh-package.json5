@@ -1,0 +1,8 @@
+{
+  modelVersion: '5.0.0',
+  name: 'marktext-harmony',
+  version: '0.0.1',
+  description: 'HarmonyOS shell for MarkText using Muya in ArkWeb.',
+  dependencies: {},
+  devDependencies: {}
+}

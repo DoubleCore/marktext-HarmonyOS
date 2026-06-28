@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "MarkText Harmony"
+    },
+    {
+      "name": "module_desc",
+      "value": "MarkText Harmony entry module"
+    },
+    {
+      "name": "entryability_desc",
+      "value": "MarkText Harmony editor"
+    }
+  ]
+}
