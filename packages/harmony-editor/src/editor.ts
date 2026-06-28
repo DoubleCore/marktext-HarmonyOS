@@ -22,13 +22,23 @@ import {
 import type { EditorTheme } from './bridge'
 import { emitBridgeError, emitEditorEvent } from './bridge'
 
-const DEFAULT_MARKDOWN = `# Hello Harmony
+const DEFAULT_MARKDOWN = `# HarmonyOS 架构演进与全场景体验
 
-This is the MarkText Muya editor core running as a standalone WebView asset.
+> 真正的无界，是从物理世界到数字空间的无缝流转。
 
-- Edit Markdown directly
-- Call \`window.MarkTextEditor.getMarkdown()\`
-- Call \`await window.MarkTextEditor.exportHtml()\`
+## 分布式软总线的核心突破
+
+分布式架构是鸿蒙操作系统的灵魂所在。通过软总线技术，设备之间的互联互通不再依赖复杂的网络配置，而是实现了真正的物理级融合。
+
+### 核心特性
+
+- **极简互联**：设备发现时间小于 1 秒
+- **高宽传输**：支持多路 4K 视频并发无缝流转
+- **超低时延**：毫秒级协同能力，精准同步内容状态
+
+### 写作专注与优雅
+
+在 MarkText for HarmonyOS 中，Markdown 的符号在指尖联动，化为秩序底层的层级，在墨黑与冷白之间寻找思想最纯粹的落脚点。
 `
 
 const DEFAULT_OPTIONS = {
