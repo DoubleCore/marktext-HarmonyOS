@@ -11,7 +11,101 @@
   </head>
   <body>
     <main class="editor-shell">
-      <div id="editor" class="editor-host"></div>
+      <header class="editor-topbar" aria-label="Editor status">
+        <div class="brand-lockup">
+          <span class="brand-word">MARKTEXT</span>
+          <span class="version-pill">v1.2.0 OS</span>
+        </div>
+        <div class="session-status">
+          <span class="status-dot"></span>
+          <span>Focus Session · 1420 字</span>
+        </div>
+        <div class="platform-word">HARMONY NATIVE</div>
+      </header>
+
+      <section class="editor-workbench">
+        <aside class="editor-rail" aria-label="MarkText navigation">
+          <div>
+            <h1>MarkText.</h1>
+            <p>Editorial Engine</p>
+          </div>
+          <nav class="rail-nav">
+            <a class="rail-link rail-link-active" href="#editor">
+              <span>全部文档</span>
+              <span>3</span>
+            </a>
+            <a class="rail-link" href="#editor">
+              <span>高级设置</span>
+            </a>
+          </nav>
+          <div class="mode-card">
+            <strong>社论美学模式</strong>
+            <span>HarmonyOS 杂志排版视图，强调长文阅读与专注写作。</span>
+          </div>
+        </aside>
+
+        <aside class="document-list" aria-label="Recent drafts">
+          <div class="list-head">
+            <h2>最近草稿</h2>
+            <button type="button">+ 新建</button>
+          </div>
+          <label class="search-box">
+            <span>⌕</span>
+            <input type="search" placeholder="在社论库中搜索..." />
+          </label>
+          <article class="draft-card draft-card-active">
+            <h3>HarmonyOS 架构演进与全场景体验</h3>
+            <p class="draft-meta">10分钟前 · 1420 WORDS</p>
+            <p>分布式架构是鸿蒙操作系统的灵魂所在。通过软总线技术，设备之间的互联互通不再依赖复杂的网络配置...</p>
+          </article>
+          <article class="draft-card">
+            <h3>重塑写作：论极简主义的器物感</h3>
+            <p class="draft-meta">2小时前 · 840 WORDS</p>
+            <p>一个好的编辑器，应该像一张静置在案头的宣纸，谦卑而优雅地承载思想。</p>
+          </article>
+          <article class="draft-card">
+            <h3>MarkText 鸿蒙版：Muya 引擎的轻量化移植</h3>
+            <p class="draft-meta">昨天 · 2150 WORDS</p>
+            <p>基于 Web 标准与 ArkUI 的原生桥接体系，大幅缩短渲染链条。</p>
+          </article>
+        </aside>
+
+        <section class="editor-stage" aria-label="Markdown editor">
+          <div class="stage-titlebar">
+            <div>
+              <h2>HarmonyOS 架构演进与全场景体验</h2>
+              <span>EDITABLE</span>
+            </div>
+            <div class="stage-actions" aria-label="Editor actions">
+              <button type="button">保存</button>
+              <button type="button">导出</button>
+            </div>
+          </div>
+          <div class="format-strip" aria-label="Formatting shortcuts">
+            <button type="button">H1</button>
+            <button type="button">H2</button>
+            <button type="button">B</button>
+            <button type="button"><i>I</i></button>
+            <button type="button">”</button>
+            <button type="button">&lt;&gt;</button>
+            <button type="button">List</button>
+          </div>
+          <div id="editor" class="editor-host"></div>
+          <footer class="editor-footer">
+            <span><span class="status-dot"></span> 自动保存已开启</span>
+            <span>Markdown · UTF-8</span>
+          </footer>
+        </section>
+
+        <aside class="preview-rail" aria-label="Live editorial preview">
+          <div class="preview-head">⊙ LIVE EDITORIAL</div>
+          <article>
+            <h2>HarmonyOS 全场景体验</h2>
+            <blockquote>真正的专注，是让工具退到文字之后。</blockquote>
+            <p>分布式架构、轻量编辑内核与原生桥接共同构成移动端写作体验的骨架。</p>
+          </article>
+        </aside>
+      </section>
     </main>
     <script type="module" src="/src/main.ts"></script>
   </body>

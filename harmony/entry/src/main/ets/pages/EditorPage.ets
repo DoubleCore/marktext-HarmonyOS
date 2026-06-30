@@ -20,7 +20,7 @@ struct EditorPage {
   @State documentId: string = `${Date.now()}`
   @State title: string = 'Untitled.md'
   @State path: string = ''
-  @State markdown: string = '# Untitled\n\nStart writing in MarkText Harmony.\n'
+  @State markdown: string = ''
   @State editorReady: boolean = false
   @State dirty: boolean = false
   @State statusText: string = 'Loading editor'
@@ -166,7 +166,8 @@ struct EditorPage {
     Column() {
       EditorToolbar({
         title: this.dirty ? `${this.title} *` : this.title,
-        onBack: () => router.back(),
+        theme: this.theme,
+        onSettings: () => router.pushUrl({ url: 'pages/SettingsPage' }),
         onSave: () => {
           void this.saveDocument()
         },
@@ -178,7 +179,7 @@ struct EditorPage {
       Row({ space: 10 }) {
         Text(this.statusText)
           .fontSize(12)
-          .fontColor(this.editorReady ? '#1F8A4C' : '#6B7280')
+          .fontColor(this.editorReady ? '#25D084' : (this.theme === 'dark' ? '#7D8797' : '#6B7280'))
           .layoutWeight(1)
 
         Button(this.theme === 'dark' ? 'Light' : 'Dark')
@@ -189,7 +190,7 @@ struct EditorPage {
       }
       .width('100%')
       .padding({ left: 12, right: 12, bottom: 8 })
-      .backgroundColor('#FFFFFF')
+      .backgroundColor(this.theme === 'dark' ? '#080B10' : '#FFFFFF')
 
       Web({
         src: this.bridge.source,
@@ -210,6 +211,6 @@ struct EditorPage {
     }
     .width('100%')
     .height('100%')
-    .backgroundColor('#F6F7F9')
+    .backgroundColor(this.theme === 'dark' ? '#05070A' : '#F6F7F9')
   }
 }

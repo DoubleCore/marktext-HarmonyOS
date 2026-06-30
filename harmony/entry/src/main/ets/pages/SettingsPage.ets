@@ -41,12 +41,13 @@ struct SettingsPage {
       Row() {
         Button('Back')
           .height(40)
+          .backgroundColor(this.theme === 'dark' ? '#2563EB' : '#0F62FE')
           .onClick(() => router.back())
 
         Text('Settings')
           .fontSize(24)
           .fontWeight(FontWeight.Bold)
-          .fontColor('#1F2428')
+          .fontColor(this.theme === 'dark' ? '#F4F7FB' : '#1F2428')
           .layoutWeight(1)
       }
       .width('100%')
@@ -56,9 +57,10 @@ struct SettingsPage {
           Text('Dark theme')
             .fontSize(16)
             .fontWeight(FontWeight.Medium)
+            .fontColor(this.theme === 'dark' ? '#F4F7FB' : '#1F2428')
           Text('Applied to the Web editor on the editor page.')
             .fontSize(12)
-            .fontColor('#6B7280')
+            .fontColor(this.theme === 'dark' ? '#9AA4B2' : '#6B7280')
         }
         .alignItems(HorizontalAlign.Start)
         .layoutWeight(1)
@@ -74,17 +76,18 @@ struct SettingsPage {
       .width('100%')
       .padding(16)
       .borderRadius(8)
-      .backgroundColor('#FFFFFF')
+      .backgroundColor(this.theme === 'dark' ? '#10151E' : '#FFFFFF')
 
       Column({ space: 10 }) {
         Row() {
           Text('Font size')
             .fontSize(16)
             .fontWeight(FontWeight.Medium)
+            .fontColor(this.theme === 'dark' ? '#F4F7FB' : '#1F2428')
             .layoutWeight(1)
           Text(`${this.fontSize}px`)
             .fontSize(14)
-            .fontColor('#6B7280')
+            .fontColor(this.theme === 'dark' ? '#9AA4B2' : '#6B7280')
         }
         .width('100%')
 
@@ -104,11 +107,11 @@ struct SettingsPage {
       .width('100%')
       .padding(16)
       .borderRadius(8)
-      .backgroundColor('#FFFFFF')
+      .backgroundColor(this.theme === 'dark' ? '#10151E' : '#FFFFFF')
     }
     .width('100%')
     .height('100%')
     .padding(20)
-    .backgroundColor('#F6F7F9')
+    .backgroundColor(this.theme === 'dark' ? '#05070A' : '#F6F7F9')
   }
 }

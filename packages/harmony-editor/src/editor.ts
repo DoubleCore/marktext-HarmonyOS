@@ -22,14 +22,7 @@ import {
 import type { EditorTheme } from './bridge'
 import { emitBridgeError, emitEditorEvent } from './bridge'
 
-const DEFAULT_MARKDOWN = `# Hello Harmony
-
-This is the MarkText Muya editor core running as a standalone WebView asset.
-
-- Edit Markdown directly
-- Call \`window.MarkTextEditor.getMarkdown()\`
-- Call \`await window.MarkTextEditor.exportHtml()\`
-`
+const DEFAULT_MARKDOWN = ''
 
 const DEFAULT_OPTIONS = {
   frontMatter: true,

@@ -124,7 +124,7 @@ HARMONY_HDC_TARGET=<target-id> pnpm run:harmony-device
 ```
 
 The helper installs `entry-default-unsigned.hap` with `hdc install -r`, then
-launches `com.marktext.harmony/EntryAbility` with `aa start`. DevEco Studio is
+launches `com.gaoding000.qingmo/EntryAbility` with `aa start`. DevEco Studio is
 still the preferred place to observe the UI and verify ArkWeb loading, editing,
 save, recent files, settings, and export behavior.
 

@@ -1,6 +1,6 @@
 {
   app: {
-    bundleName: 'com.marktext.harmony',
+    bundleName: 'com.gaoding000.qingmo',
     vendor: 'MarkText',
     versionCode: 1,
     versionName: '0.0.1',

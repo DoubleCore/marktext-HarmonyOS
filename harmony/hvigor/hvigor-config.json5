@@ -1,8 +1,8 @@
 {
   modelVersion: '5.0.0',
   dependencies: {
-    '@ohos/hvigor': 'file:D:/Program/command-line-tools/hvigor/hvigor',
-    '@ohos/hvigor-ohos-plugin': 'file:D:/Program/command-line-tools/hvigor/hvigor-ohos-plugin'
+    '@ohos/hvigor': 'file:D:/Program/DevEco Studio/tools/hvigor/hvigor',
+    '@ohos/hvigor-ohos-plugin': 'file:D:/Program/DevEco Studio/tools/hvigor/hvigor-ohos-plugin'
   },
   execution: {
     daemon: false

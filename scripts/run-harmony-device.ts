@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const hapPath = path.join(repoRoot, 'harmony/entry/build/default/outputs/default/entry-default-unsigned.hap')
-const bundleName = 'com.marktext.harmony'
+const bundleName = 'com.gaoding000.qingmo'
 const abilityName = 'EntryAbility'
 
 interface HdcTarget {
