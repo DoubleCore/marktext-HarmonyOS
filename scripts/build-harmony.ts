@@ -6,8 +6,11 @@ import { fileURLToPath } from 'node:url'
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const harmonyRoot = path.join(repoRoot, 'harmony')
 const appPath = path.join(harmonyRoot, 'build/outputs/default/harmony-default-unsigned.app')
+const devecoSdkRoot = 'D:/Program/DevEco Studio/sdk'
 
 const harmonyToolDirs = [
+  'D:/Program/DevEco Studio/tools/hvigor/bin',
+  'D:/Program/DevEco Studio/sdk/default/openharmony/toolchains',
   'D:/Program/command-line-tools/bin',
   'D:/Program/command-line-tools/sdk/default/openharmony/toolchains',
 ].filter(existsSync)
@@ -17,6 +20,8 @@ const currentPath = process.env[pathKey] ?? ''
 
 const env = {
   ...process.env,
+  DEVECO_SDK_HOME: process.env.DEVECO_SDK_HOME ?? devecoSdkRoot,
+  HOS_SDK_HOME: process.env.HOS_SDK_HOME ?? devecoSdkRoot,
   [pathKey]: [
     ...harmonyToolDirs,
     currentPath,

@@ -15,16 +15,16 @@
 
 :root[data-theme='dark'] {
   color-scheme: dark;
-  --editor-bg: #0d0e10;
-  --editor-surface: #111318;
-  --editor-surface-soft: rgba(17, 19, 24, 0.72);
-  --editor-ink: #e2e8f0;
-  --editor-muted: #9aa4b2;
-  --editor-faint: #657083;
-  --editor-border: rgba(226, 232, 240, 0.08);
-  --editor-border-strong: rgba(226, 232, 240, 0.14);
-  --editor-brand: #46a3ff;
-  --editor-brand-soft: rgba(0, 125, 255, 0.18);
+  --editor-bg: #05070a;
+  --editor-surface: #0b0f14;
+  --editor-surface-soft: rgba(8, 11, 16, 0.86);
+  --editor-ink: #f4f7fb;
+  --editor-muted: #a7b1c2;
+  --editor-faint: #6f7a8d;
+  --editor-border: rgba(244, 247, 251, 0.12);
+  --editor-border-strong: rgba(244, 247, 251, 0.2);
+  --editor-brand: #5bb1ff;
+  --editor-brand-soft: rgba(91, 177, 255, 0.18);
 }
 
 * {
@@ -169,7 +169,11 @@ button {
 :root[data-theme='dark'] .editor-rail,
 :root[data-theme='dark'] .document-list,
 :root[data-theme='dark'] .preview-rail {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(8, 11, 16, 0.62);
+}
+
+:root[data-theme='dark'] .document-list {
+  background: rgba(5, 7, 10, 0.7);
 }
 
 .editor-rail h1,
@@ -238,6 +242,10 @@ button {
   background: var(--editor-surface-soft);
   border: 0.5px solid var(--editor-border);
   border-radius: 6px;
+}
+
+:root[data-theme='dark'] .mode-card {
+  background: rgba(16, 21, 30, 0.92);
 }
 
 .mode-card strong,
@@ -334,6 +342,10 @@ button {
   background: var(--editor-surface-soft);
   border-color: var(--editor-border);
   box-shadow: inset 3px 0 0 var(--editor-brand);
+}
+
+:root[data-theme='dark'] .draft-card-active {
+  background: rgba(16, 21, 30, 0.95);
 }
 
 .draft-card h3 {
@@ -468,6 +480,10 @@ button {
   background: rgba(0, 125, 255, 0.18);
 }
 
+:root[data-theme='dark'] .editor-host ::selection {
+  background: rgba(91, 177, 255, 0.24);
+}
+
 .editor-host h1 {
   font-family: Menlo, Monaco, "Fira Code", "Courier New", monospace;
   font-size: 28px;
@@ -498,6 +514,10 @@ button {
   border-left: 2px solid var(--editor-brand);
 }
 
+:root[data-theme='dark'] .editor-host blockquote {
+  background: rgba(91, 177, 255, 0.08);
+}
+
 .editor-host code {
   padding: 1px 5px;
   color: var(--editor-ink);
@@ -506,7 +526,7 @@ button {
 }
 
 :root[data-theme='dark'] .editor-host code {
-  background: rgba(226, 232, 240, 0.08);
+  background: rgba(244, 247, 251, 0.11);
 }
 
 .editor-host a {

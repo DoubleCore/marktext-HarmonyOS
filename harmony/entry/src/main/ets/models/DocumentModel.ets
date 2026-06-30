@@ -18,7 +18,7 @@ export function createDraftDocument(): DocumentModel {
     id: `${Date.now()}`,
     title: 'Untitled.md',
     path: '',
-    markdown: '# Untitled\n\nStart writing in MarkText Harmony.\n',
+    markdown: '',
     updatedAt: Date.now()
   }
 }
